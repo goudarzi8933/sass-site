@@ -1,0 +1,14 @@
+@mixin transition($property, $duration) {
+    transition: $property $duration;
+}
+
+// @function calc_col($column_total_count, $column_count){
+//     @return (100% /$column_total_count)*$column_count
+// }
+
+
+// @for $i from 1 through 4 {
+//     .col-#{$i} {
+//         width: calc_col(4,$i);
+// }
+// }

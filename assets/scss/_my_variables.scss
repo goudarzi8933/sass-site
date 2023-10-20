@@ -1,0 +1,104 @@
+$primary-color: #7663ef;
+$secondary-color: #ccc;
+$light-color: #f4f4f4;
+$gray-color: #DCDCDC;
+$dark-color: #333;
+$bg-image: url(/assets/img/684-600x400.jpg);
+$border-radius: 5px;
+$box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+// margin //
+$margins: (
+    0: 0px,
+    1 :0.5rem,
+    2 :1rem,
+    3 :1.5rem,
+    4 :2rem,
+    5 :2.5rem,
+    6 :3rem,
+    7 :3.5rem,
+    8 :4rem,
+    9 :4.5rem,
+    10 :5rem
+);
+
+@each $name, $size in $margins {
+    .mt-#{$name} {
+        margin-top: $size;
+    }
+
+    .mb-#{$name} {
+        margin-top: $size;
+    }
+
+    .my-#{$name} {
+        margin-top: $size;
+        margin-bottom: $size;
+    }
+
+}
+
+@each $name, $size in $margins {
+    .ms-#{$name} {
+        margin-right: $size;
+    }
+
+    .me-#{$name} {
+        margin-left: $size;
+    }
+
+    .mx-#{$name} {
+        margin-right: $size;
+        margin-left: $size;
+    }
+
+}
+
+// padding //
+$padding: (
+    0: 0px,
+    1 :0.5rem,
+    2 :1rem,
+    3 :1.5rem,
+    4 :2rem,
+    5 :2.5rem,
+    6 :3rem,
+    7 :3.5rem,
+    8 :4rem,
+    9 :4.5rem,
+    10 :5rem,
+);
+
+@each $name, $size in $padding {
+    .pt-#{$name} {
+        padding-top: $size;
+    }
+
+    .pb-#{$name} {
+        padding-top: $size;
+    }
+
+    .py-#{$name} {
+        padding-top: $size;
+        padding-bottom: $size;
+    }
+
+}
+
+@each $name, $size in $padding {
+    .ps-#{$name} {
+        padding-right: $size;
+    }
+
+    .pe-#{$name} {
+        padding-left: $size;
+    }
+
+    .px-#{$name} {
+        padding-right: $size;
+        padding-left: $size;
+    }
+
+}
+
+// col //////////////////////////////////
